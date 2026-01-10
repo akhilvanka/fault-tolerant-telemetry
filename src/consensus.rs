@@ -1,8 +1,3 @@
-/// Raft-based consensus for distributed telemetry log replication.
-///
-/// Each node maintains a replicated log of TelemetryFrames. The leader
-/// accepts writes; followers replicate. On leader failure, an election
-/// selects a new leader within one election timeout.
 use crate::telemetry::TelemetryFrame;
 use serde::{Deserialize, Serialize};
 use std::collections::HashMap;
